@@ -168,5 +168,16 @@
             string result = chest.WinnerChest == choice ? "Won" : "Lost";
             Log.Info($"Result: {result}");
         }
+
+        /// <summary>
+        ///     Gets the user's information
+        /// </summary>
+        /// <returns>The user's information</returns>
+        public async Task<UserInfoResult> GetUserInfo()
+        {
+            string url = _config.ChestUrl + 1;
+            var resp = await _client.GetStringAsync(url);
+            return new UserInfoResult(resp);
+        }
     }
 }
