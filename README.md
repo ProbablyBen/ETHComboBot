@@ -3,6 +3,8 @@ ETHCombo Bot
 
 This repository contains all the source code to run the ETHCombo Bot
 
+Download: https://raw.githubusercontent.com/ProbablyBen/ETHComboBot/master/ETHComboBot.exe
+
 ## Pre-Requirements
 Before running this bot, you need a few urls.
 
